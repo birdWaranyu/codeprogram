@@ -1,0 +1,58 @@
+
+
+รวมคำสั่ง git
+
+
+คำสั่ง commands cmd
+git config --global user.name "" ใสชื่อเราไป
+git config --global user.email "" ใสชื่อเมล์เราไป
+git config --global --list
+
+
+mkdir ตามดวยชื่อ folder ที่เราสร้าง ใน commands
+git init บน commands สำหรับ commit ได้
+git status check สำหรับไฟล์ว่าถูก commit ไปยัง commands
+git add เพิ่ม ไฟล์สำหรับ commit ไป
+
+
+Staged สถานะที่ไฟล์พร้อมจะ commit
+unstaged ไฟล์ที่ถูกแก้ไขแต่ว่ายังไม่ได้เตรียม commit
+untracked ไฟล์ที่ยังไม่ถูก track โดย git (ส่วนมากจะเป็นไฟล์ที่เพิ่งสร้างใหม่)
+deleted ไฟล์ที่ถูกลบไปแล้ว
+
+
+git init ไว้สร้าง git repository
+git status ตรจสอบสถานะไฟล์ของ working directory และ staging area
+git add เพิ่มไฟล์ the working directory เข้าสู่ staging area
+git diff แสดงความแตกต่างของไฟล์ระหว่าง working director กับ staging area
+git commit เก้บประวัติการแก้ไขแบบถาวรจาก staging area ไว้ใน repository
+git log แสดงรายการที่ commit มาทั้งหมด
+
+
+คำสั่ง commands cmd
+git add ตามด้วยชื่อไฟล์ที่ต้องการ add
+แต่ถ้า git .add คือ เพิ่มไฟล์ทั้งหมดที่ได้แก้ไขไป
+git add . อัพเดทมากกว่า 1 ไฟล์
+git diff greeting.txt จะแสดงสถานะว่า มีการแก้ไขอะไรไปบ้าง
+git commit -m "My first Suucess"
+git push -u origin master
+git log
+echo "get: Hey see you me to" >> greeting.txt เวลาเพิ่มคำลงไปไฟล์
+git show HEAD
+echo "" > greeting.txt ลบข้อมูลออกไป
+
+git clone สำสั่งไว้สำหรับ นำ git hub มาจาก link มาไว้ใน project เรา
+git remote -v จะแสดง url ชื่อ git เราและ ชื่อไฟล์เรา
+git fetch จะแสดงตอน update ข้อมูลลงไปเท่านั้น ถึงใช้คำสั่งนี้ได้
+git merge origin/main คำสั่งเpull ข้อมูลจาก github เข้ามาในเครื่อง dev ตัวเอง
+
+
+
+ขั้นตอนการ clone project ต่าง ๆ
+git init 
+git remote add origin ตามด้วย url ชื่อ clone code
+git add . ถ้ากรณีแกไขหรือเพิ่มไฟล์ ใน project นั้น ๆ
+git status เพิ่ม check ว่า ไฟล์สถานะเป็นสีเขียวยัง ถ้าเขียวแล้ว แสดงว่า อัพเดทแล้ว ถ้าสีแดง แสดงว่า ยังไม่ได้อัพเดท
+git commit -m "sucsss"
+git push -u origin master
+

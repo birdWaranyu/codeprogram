@@ -1,0 +1,29 @@
+
+
+C:\inetpub\wwwroot
+
+C:\Users\Admin
+
+
+php artisan serve
+
+php artisan make:controller ชือ Controller
+
+php artisan make:model ชือ model
+
+
+
+{{ asset('public/css/style.css') }} 
+
+
+php artisan make:migration create_blogs_table
+
+php artisan make:migration create_blogs_table — create=blogs
+
+php artisan migtate
+
+php artisan route:list
+
+
+composer create-project --prefer-dist laravel/laravel blog
+
